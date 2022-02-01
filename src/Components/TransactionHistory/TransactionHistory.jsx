@@ -19,7 +19,7 @@ const TransactionHistory = ({items}) => {
    
     {items.map((el,i) => {
         let col="white";
-               {if(i%2==0){col="grey"}else col="white"}
+               {if(i%2===0){col="grey"}else col="white"}
 
               return (
                   
