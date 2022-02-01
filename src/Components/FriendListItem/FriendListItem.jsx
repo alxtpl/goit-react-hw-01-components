@@ -1,5 +1,5 @@
-import './FriendListItem.css';
 import { SpanStyled } from "./FriendListItem.styled";
+import { LiStyled } from "./FriendListItem.styled";
 
 
 const FriendListItem = (props) => {
@@ -7,11 +7,11 @@ const FriendListItem = (props) => {
     //    model, price, currency
     return (
 
-        <li class="item" key={id}>
-            <SpanStyled class="status" isOnline={ isOnline}></SpanStyled>
-            <img class="avatar" src={avatar} alt="User avatar" width="48" />
-            <p class="name">{name}</p>
-        </li>
+        <LiStyled className="item" key={id}>
+            <SpanStyled className="status" isOnline={ isOnline}></SpanStyled>
+            <img className="avatar" src={avatar} alt="User avatar" width="48" />
+            <p className="name">{name}</p>
+        </LiStyled>
     );
 };
 

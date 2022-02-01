@@ -1,5 +1,5 @@
 import FriendtsListItem from "../FriendListItem/FriendListItem";
-import "./FriendList.css";
+import s from  "./FriendList.module.scss";
 import friends from "../../data/friends.json";
 
 
@@ -8,7 +8,7 @@ const FriendsList = () => {
     return (
         <section>
 
-            <ul class="friend-list">
+            <ul className={s["friend-list"]}>
                       {friends.map((el) => {
                     return (
                         <FriendtsListItem
