@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 
 import s from "../Profile/Profile.module.scss";
 
@@ -36,5 +37,19 @@ const Profile = (props) => {
     </>
   );
 };
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
+};
 
+Profile.defaultProps = {
+  username: null,
+  tag:null,
+  location: null,
+  avatar: null,
+  stats: null,
+  }
 export default Profile;

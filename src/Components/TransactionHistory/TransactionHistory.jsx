@@ -1,4 +1,5 @@
 import s from "../TransactionHistory/TransactionHistory.module.scss";
+import PropTypes from "prop-types";
 
 const TransactionHistory = ({items}) => {
  
@@ -44,5 +45,11 @@ const TransactionHistory = ({items}) => {
     
   );
 };
+TransactionHistory.propTypes = {
+   items: PropTypes.array.isRequired,
+};
 
+TransactionHistory.defaultProps = {
+   items: null,
+  }
 export default TransactionHistory;

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import s from "../Statistics/Statistics.module.scss";
 function getRandomColor() {
   var letters = '0123456789ABCDEF'.split('');
@@ -31,5 +33,13 @@ const Statistics = (props) => {
     </section>
   );
 };
+Statistics.propTypes = {
+  title: PropTypes.string,
+   stats: PropTypes.array.isRequired,
+};
 
+Statistics.defaultProps = {
+  title: null,
+   stats: null,
+  }
 export default Statistics;

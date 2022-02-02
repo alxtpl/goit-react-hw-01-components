@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { SpanStyled } from "./FriendListItem.styled";
 import { LiStyled } from "./FriendListItem.styled";
 
@@ -16,5 +17,15 @@ const FriendListItem = (props) => {
 };
 
 
-
+FriendListItem.propTypes = {
+    isOnline: PropTypes.bool.isRequired,
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+  };
+  
+  FriendListItem.defaultProps = {
+    isOnline: null,
+    avatar: null,
+    name: null,
+    }
 export default FriendListItem;
